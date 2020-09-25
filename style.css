@@ -142,7 +142,8 @@ article {
 }
 section.br-header{
   height: 75vh;
-
+  overflow: hidden;
+  position: relative;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -668,6 +669,11 @@ article.br-history-se-ctnt-mobile {
   display: none;
 }
 
+@media (max-width:1450px) {
+  article.br-history-se-ctnt-block-text h3, article.br-history-se-ctnt-block-text-ie h3{
+    width: 70%;
+  }
+}
 @media (max-width: 950px) {
   section.br-header{
     height: 75vh;
@@ -698,6 +704,9 @@ article.br-history-se-ctnt-mobile {
   }
   article.br-history-se-ctnt-block{
     width: 100%;
+  }
+  article.br-history-se-ctnt-block-text h3, article.br-history-se-ctnt-block-text-ie h3{
+    width: 70%;
   }
 }
 
@@ -778,6 +787,9 @@ article.br-history-se-ctnt-mobile {
     padding: 95px 20px 40px 20px;
     margin: 30px 0px;
   }
+  article.br-history-se-ctnt-block-text h3, article.br-history-se-ctnt-block-text-ie h3{
+    width: 100%;
+  }
 }
 .animation-start-app {
   -webkit-animation: start-app 1s forwards;
@@ -828,13 +840,13 @@ img.animation-showBottomMobile {
 }
 @-webkit-keyframes showBottom {
   0%   { opacity: 0; top:0; }
-  50%   { opacity: 0; top:25%; }
-  100% { opacity: 1; top:-10%;}
+  50%   { opacity: 0; top:200px; }
+  100% { opacity: 1; top:-100px;}
 }
 @keyframes showBottom {
   0%   { opacity: 0; top:0; }
-  50%   { opacity: 0; top:25%; }
-  100% { opacity: 1; top:-10%; }
+  50%   { opacity: 0; top:200px; }
+  100% { opacity: 1; top:-100px;}
 }
 @-webkit-keyframes showBottomMobile {
   0%   { opacity: 0; }
